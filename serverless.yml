@@ -1,0 +1,14 @@
+service: readability-api
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  getArticle:
+    handler: handler.getArticle
+    events:
+      - http:
+          path: article/{id}
+          method: get
+          cors: true

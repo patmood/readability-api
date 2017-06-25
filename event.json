@@ -1,0 +1,57 @@
+{
+    "resource": "/article/{id}",
+    "path": "/article/ARTICLE_ID",
+    "httpMethod": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, sdch, br",
+        "Accept-Language": "en-US,en;q=0.8",
+        "cache-control": "no-cache",
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-Country": "US",
+        "Host": "zhw3mk2i90.execute-api.us-east-1.amazonaws.com",
+        "postman-token": "a179dae3-fc90-d805-193d-73a6ae56d97a",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+        "Via": "2.0 ba26a6eef2785fa2e20e601890b882b2.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "hS1PEjjEwdPCtPhqN9Nl26L4NUIKof_1jiPD2MDsiOAUiy0-WTSsTw==",
+        "X-Amzn-Trace-Id": "Root=1-59500e7a-7cb2ef804e9ecddc15513a68",
+        "X-Forwarded-For": "67.160.227.41, 54.239.134.16",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "queryStringParameters": null,
+    "pathParameters": {
+        "id": "ARTICLE_ID"
+    },
+    "stageVariables": null,
+    "requestContext": {
+        "path": "/dev/article/ARTICLE_ID",
+        "accountId": "748667824659",
+        "resourceId": "h1s6op",
+        "stage": "dev",
+        "requestId": "3c8781e2-59dc-11e7-8e00-f9d81e9ac037",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "apiKey": "",
+            "sourceIp": "67.160.227.41",
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+            "user": null
+        },
+        "resourcePath": "/article/{id}",
+        "httpMethod": "GET",
+        "apiId": "zhw3mk2i90"
+    },
+    "body": null,
+    "isBase64Encoded": false
+}
