@@ -14,6 +14,14 @@ module.exports.getArticle = (event, context, callback) => {
     return callback(null, { statusCode: 400 });
   }
 
+  fetch(`https://www.reddit.com/${event.pathParameters.id}.json`)
+    .then(res => res.json())
+    .then(json => {
+      const post = json[0].data.children
+      const url = post[0].data.url
+      console.log(url)
+    })
+
   const response = {
     statusCode: 200,
     headers: {
@@ -21,7 +29,6 @@ module.exports.getArticle = (event, context, callback) => {
     },
     body: JSON.stringify({
       message: 'Go Serverless v1.0! Your function executed successfully!',
-      input: event,
     }),
   };
 

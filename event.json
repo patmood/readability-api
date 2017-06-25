@@ -1,6 +1,6 @@
 {
     "resource": "/article/{id}",
-    "path": "/article/ARTICLE_ID",
+    "path": "/article/6jdyuw",
     "httpMethod": "GET",
     "headers": {
         "Accept": "*/*",
@@ -14,26 +14,26 @@
         "CloudFront-Is-Tablet-Viewer": "false",
         "CloudFront-Viewer-Country": "US",
         "Host": "zhw3mk2i90.execute-api.us-east-1.amazonaws.com",
-        "postman-token": "a179dae3-fc90-d805-193d-73a6ae56d97a",
+        "postman-token": "738f61de-d602-428c-c79a-56ce562686e5",
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
-        "Via": "2.0 ba26a6eef2785fa2e20e601890b882b2.cloudfront.net (CloudFront)",
-        "X-Amz-Cf-Id": "hS1PEjjEwdPCtPhqN9Nl26L4NUIKof_1jiPD2MDsiOAUiy0-WTSsTw==",
-        "X-Amzn-Trace-Id": "Root=1-59500e7a-7cb2ef804e9ecddc15513a68",
-        "X-Forwarded-For": "67.160.227.41, 54.239.134.16",
+        "Via": "2.0 373880a309382d9266a9313233b86d25.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "8V6XCOpZQm_Iud6yofqgW0jBKPPBe3jzJaQBFIm23I4eT7dwBdJ9Hw==",
+        "X-Amzn-Trace-Id": "Root=1-59501161-52882bcd79774cf129b1efe6",
+        "X-Forwarded-For": "67.160.227.41, 54.239.203.58",
         "X-Forwarded-Port": "443",
         "X-Forwarded-Proto": "https"
     },
     "queryStringParameters": null,
     "pathParameters": {
-        "id": "ARTICLE_ID"
+        "id": "6jdyuw"
     },
     "stageVariables": null,
     "requestContext": {
-        "path": "/dev/article/ARTICLE_ID",
+        "path": "/dev/article/6jdyuw",
         "accountId": "748667824659",
         "resourceId": "h1s6op",
         "stage": "dev",
-        "requestId": "3c8781e2-59dc-11e7-8e00-f9d81e9ac037",
+        "requestId": "f7bd43f0-59dd-11e7-b03c-cbb392ef8609",
         "identity": {
             "cognitoIdentityPoolId": null,
             "accountId": null,
