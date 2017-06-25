@@ -3,6 +3,8 @@ service: readability-api
 provider:
   name: aws
   runtime: nodejs6.10
+  versionFunctions: false
+  memorySize: 512
 
 functions:
   getArticle:

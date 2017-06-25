@@ -9,6 +9,7 @@
   "author": "Patrick Moody (http://www.patmoody.com)",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^1.7.1"
+    "node-fetch": "^1.7.1",
+    "node-readability": "^2.2.0"
   }
 }
