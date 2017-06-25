@@ -1,9 +1,5 @@
 'use strict';
 
-const fetch = require('node-fetch')
-const read = require('node-readability')
-
-
 /*
 
 Endpoint to return readable content for given reddit article id.
@@ -13,14 +9,8 @@ To test this locally, run:
 
 */
 
-function getReadablePage(url) {
-  return new Promise((resolve, reject) => {
-    read(url, (err, data) => {
-      if(err) reject(err);
-      resolve(data)
-    })
-  })
-}
+const fetch = require('node-fetch')
+const extract = require('unfluff')
 
 module.exports.getArticle = (event, context, callback) => {
   if (!event.pathParameters.id) {
@@ -34,26 +24,21 @@ module.exports.getArticle = (event, context, callback) => {
     .then(json => {
       const post = json[0].data.children
       url = post[0].data.url
-      return getReadablePage(url)
+      return fetch(url)
     })
-    .then(article => {
+    .then(res => res.text())
+    .then(text => extract(text))
+    .then(data => {
       const response = {
         statusCode: 200,
         headers: {
           'Access-Control-Allow-Origin': '*', // Required for CORS support to work
         },
-        body: JSON.stringify({
-          title: article.title,
-          content: article.content,
-          url: url,
-          redditId: event.pathParameters.id,
-        }),
+        body: JSON.stringify(data),
       }
       callback(null, response)
     })
     .catch(err => {
       console.log(err)
     })
-
-
 }
